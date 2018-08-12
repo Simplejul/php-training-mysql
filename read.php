@@ -24,7 +24,7 @@
           $req = $pdo -> query($sql);
           while ($row = $req -> fetch()){
               echo '<tr>
-              <td>'.$row['name'].'</td>
+              <td><a href="update.php">'.$row['name'].'</a></td>
               <td>'.$row['difficulty'].'</td>
               <td>'.$row['distance'].'</td>
               <td>'.$row['duration'].'</td>
